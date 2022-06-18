@@ -14,6 +14,11 @@
 		6D253353285D9CB000065C8C /* LayoutConceptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D253352285D9CB000065C8C /* LayoutConceptTests.swift */; };
 		6D25335D285D9CB000065C8C /* LayoutConceptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25335C285D9CB000065C8C /* LayoutConceptUITests.swift */; };
 		6D25335F285D9CB000065C8C /* LayoutConceptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25335E285D9CB000065C8C /* LayoutConceptUITestsLaunchTests.swift */; };
+		6DA4214E285DA83C00C49D47 /* ExampleSet1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4214D285DA83C00C49D47 /* ExampleSet1.swift */; };
+		6DA42150285DA8A000C49D47 /* ExampleSet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4214F285DA8A000C49D47 /* ExampleSet2.swift */; };
+		6DA42156285DB52B00C49D47 /* ObservableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA42155285DB52B00C49D47 /* ObservableExample.swift */; };
+		6DA42158285DBC6300C49D47 /* AddNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA42157285DBC6200C49D47 /* AddNameView.swift */; };
+		6DA4215B285DC63700C49D47 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4215A285DC63700C49D47 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		6D253358285D9CB000065C8C /* LayoutConceptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutConceptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D25335C285D9CB000065C8C /* LayoutConceptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConceptUITests.swift; sourceTree = "<group>"; };
 		6D25335E285D9CB000065C8C /* LayoutConceptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConceptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6DA4214D285DA83C00C49D47 /* ExampleSet1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSet1.swift; sourceTree = "<group>"; };
+		6DA4214F285DA8A000C49D47 /* ExampleSet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSet2.swift; sourceTree = "<group>"; };
+		6DA42155285DB52B00C49D47 /* ObservableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableExample.swift; sourceTree = "<group>"; };
+		6DA42157285DBC6200C49D47 /* AddNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNameView.swift; sourceTree = "<group>"; };
+		6DA4215A285DC63700C49D47 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +104,10 @@
 		6D253340285D9CAB00065C8C /* LayoutConcept */ = {
 			isa = PBXGroup;
 			children = (
-				6D253341285D9CAB00065C8C /* LayoutConceptApp.swift */,
-				6D253343285D9CAB00065C8C /* ContentView.swift */,
-				6D253345285D9CB000065C8C /* Assets.xcassets */,
+				6DA42159285DC61A00C49D47 /* Models */,
+				6D25336B285D9D2E00065C8C /* App */,
 				6D253347285D9CB000065C8C /* Preview Content */,
+				6D25336C285D9D4800065C8C /* Views */,
 			);
 			path = LayoutConcept;
 			sourceTree = "<group>";
@@ -125,6 +135,43 @@
 				6D25335E285D9CB000065C8C /* LayoutConceptUITestsLaunchTests.swift */,
 			);
 			path = LayoutConceptUITests;
+			sourceTree = "<group>";
+		};
+		6D25336B285D9D2E00065C8C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6D253341285D9CAB00065C8C /* LayoutConceptApp.swift */,
+				6D253345285D9CB000065C8C /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6D25336C285D9D4800065C8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DA4214C285DA81200C49D47 /* PracticeViews */,
+				6D253343285D9CAB00065C8C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DA4214C285DA81200C49D47 /* PracticeViews */ = {
+			isa = PBXGroup;
+			children = (
+				6DA4214D285DA83C00C49D47 /* ExampleSet1.swift */,
+				6DA4214F285DA8A000C49D47 /* ExampleSet2.swift */,
+				6DA42155285DB52B00C49D47 /* ObservableExample.swift */,
+				6DA42157285DBC6200C49D47 /* AddNameView.swift */,
+			);
+			path = PracticeViews;
+			sourceTree = "<group>";
+		};
+		6DA42159285DC61A00C49D47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DA4215A285DC63700C49D47 /* ContentViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +306,11 @@
 			files = (
 				6D253344285D9CAB00065C8C /* ContentView.swift in Sources */,
 				6D253342285D9CAB00065C8C /* LayoutConceptApp.swift in Sources */,
+				6DA42150285DA8A000C49D47 /* ExampleSet2.swift in Sources */,
+				6DA4215B285DC63700C49D47 /* ContentViewModel.swift in Sources */,
+				6DA4214E285DA83C00C49D47 /* ExampleSet1.swift in Sources */,
+				6DA42158285DBC6300C49D47 /* AddNameView.swift in Sources */,
+				6DA42156285DB52B00C49D47 /* ObservableExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
