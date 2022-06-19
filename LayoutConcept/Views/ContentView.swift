@@ -16,20 +16,26 @@ struct ContentView: View {
         TabView {
             ExampleSet1()
                 .tabItem{
-                    Label("View Examples", systemImage: "doc.viewfinder.fill")
-                    Text("View Examples")
+                    Label("View", systemImage: "doc.viewfinder.fill")
+                    Text("View")
                 }
             
             ExampleSet2()
                 .tabItem{
-                    Label("Pickers Examples", systemImage: "cursorarrow")
-                    Text("Pickers Examples")
+                    Label("Pickers", systemImage: "cursorarrow")
+                    Text("Pickers")
                 }
             
             ObservableExample()
                 .tabItem{
-                    Label("Observable Examples", systemImage: "link")
-                    Text("Observable Examples")
+                    Label("Observable", systemImage: "link")
+                    Text("Observable")
+                }
+            
+            GeometryReaderDemo()
+                .tabItem{
+                    Label("GeometryReader", systemImage: "square.dashed")
+                    Text("GeometryReader")
                 }
         }
     }
